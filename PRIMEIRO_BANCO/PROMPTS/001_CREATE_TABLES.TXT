@@ -1,0 +1,68 @@
+[ACAO]
+
+crie uma tabela para armazenar veiculos na linguagem PostgreSQL pensando em um projeto para transportadora.
+crie uma tabela para armazenar as marcas dos veiculos.
+Crie uma tabela para armazenar os modelos dos veiculos.
+crie uma tabela para armazenar os tipos de veiculos
+crie uma tabela para armazenar os centro de custo
+crie uma tabela para armazenar os centro de gasto
+crie uma tabela para armazenar as unidade de negocio
+
+[CONTEXTO]
+
+A tabela (tbl_placas_cavalo) vai armazenar dados de uma frota veiculos de uma transportadora para atender as operacoes HEINEKEN e ULTRAGAZ. 
+A tabela (tbl_modelo_veiculos) vai armazenar os modelos. 
+A tabela (tbl_tipos_veiculos) vai armazenar os tipos de veiculos. 
+A tabela (tbl_centro_de_custo) vai armazenar os centro de custo. 
+A tabela (tbl_centro_de_gasto) vai armazenar os centro de gasto. 
+A tabela (tbl_unidade_de_negocio) vai armazenar as unidade de negocio da empresa. 
+
+
+[INFORMACAO]
+
+tbl_placas_veiculos
+ID
+PLACA (=7 digitos)
+MARCA
+MODELO
+TIPO DE VEICULO
+ANO FABRICACAO
+ANO MODELO
+CHASSI ( <= 17 digitos)
+RENAVAM
+COR  
+CENTRO DE CUSTO
+UNIDADE DE NEGOCIO
+CENTRO DE GASTO
+ODOMETRO
+DATA DA INCLUSAO
+STATUS  -- ATIVO, INATIVO, MANUTENCAO
+
+tbl_marcas_veiculos
+ID
+MARCA
+
+tbl_modelo_veiculos
+ID
+MODELO
+MARCA_ID
+
+tbl_tipos_veiculos
+ID 
+TIPO VEICULO  -- CAVALO, SEMI-REBOQUE, CAMINHONETE, CARRO, MOTO
+
+tbl_centro_de_custo
+ID
+CENTRO DE CUSTO  -- ULTRAGAZ, HEINEKEN
+
+tbl_centro_de_gasto
+ID
+CENTRO DE GASTO --SPOT,DEDICADO,BALDEIO
+
+tbl_unidade_de_negocio
+ID
+unidade de negocio  --PONTA GROSSA, RIBEIRAO PRETO, SALTO, CACAPAVA, LENCOIS PAULISTA
+
+
+Os textos que não foram especificados o tamanho de digitos. Mantenha um padrao de 50 digitos.
+Ja realize os FOREIGN KEY entre as tabelas quando necessário.
